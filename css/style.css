@@ -129,10 +129,15 @@ a{
     }    
 
 
-button li{
-	background-color: blueviolet;
+.button li{
+	background-image: linear-gradient(to left, blueviolet, black);
 	border-style: none;
     padding: 1px 15px;
+    transition: all 1s;
+}
+
+.button:hover {
+	transform: scale(1.1);
 }
 
 h3{
