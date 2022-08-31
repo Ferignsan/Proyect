@@ -1,0 +1,157 @@
+/* Reseteo */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+
+/* Fondos */
+.fondo{
+	background-image: url("../assets/img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.logo img{
+	display: inline-flex;
+	height: 70px;	
+}
+
+/* Header y Footer */
+li{
+	list-style-type: none;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+	line-height: 80px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	display: inline-flex;
+	height: 2px;
+}
+
+.sticky{
+	position: sticky;
+	top: 0;
+}
+
+.header-footer{
+	background-color: blueviolet;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main */
+/* Titulos */
+.titulo{
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+	color: white;
+	background-color: rgba(34, 32, 32, 0.476);
+	text-align: center;
+	margin: 40px;
+}
+
+/* Parrafos */
+.parrafo{
+	padding: 30px 10px;
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	color: white;
+	background-color: rgba(34, 32, 32, 0.476);
+	text-align: center;
+	margin: 40px;
+}
+
+.lugares{
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+	color: white;
+	background-color: rgba(34, 32, 32, 0.476);
+	text-align: center;
+}
+
+
+/* Media Query Tablet */
+@media screen and (max-width: 760px) {
+    .lugares{
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-footer{
+    	flex-direction: column;
+    } 
+    }  
+
+/* Media Query Mobile */
+@media screen and (max-width: 360px) {
+    .lugares{
+    	display: grid;
+    	grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-footer{
+    	flex-direction: column;
+    }
+    }
+     
+
+/* Media Query Desktop */
+@media screen and (min-width: 761px) {
+    .lugares{
+    	display: grid;
+    	grid-template-columns: repeat(7, 1fr);
+    }
+
+    .header-footer{
+    	flex-direction: column;
+    }    
+
+
+button li{
+	background-color: blueviolet;
+	border-style: none;
+    padding: 1px 15px;
+}
+
+h3{
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	color: white;
+	background-color: blueviolet;
+	margin: 40px
+}
+
+.redes a{
+	display: inline-flex;
+	height: 30px;
+}
+/*Fondo Pestañas*/
+.fondosolid{
+    background-color: yellowgreen;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
